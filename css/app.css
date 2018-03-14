@@ -1,5 +1,10 @@
 body
 {
+    background-image:url("../assets/logo.gif");
+    background-position:center;
+    background-repeat:no-repeat;
+    width:700px;
+    height:400px;
     background-color:#827D7D;
     color:white;
 
@@ -11,7 +16,8 @@ body
 
 .logo
 {
-    height:400px;
+    /* position:; */
+    height:800px;
     /* width:800px; */
     z-index:5;
     display: block;
@@ -48,8 +54,8 @@ body
 /* The heart of the matter */
 .testimonial-group {
     position:relative;
-    /* top: 380px; */
-    bottom: 10%;
+    top: 380px;
+    /* bottom: 10%; */
     /* padding: 0px; */
     /* margin: 0px; */
 }
