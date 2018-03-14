@@ -229,7 +229,17 @@
 	 }
 	 
 	 noGlitch = true;
+
 	 function onTimerTick() {
+
+	     //////////
+	     // uncomment for glitch bitch
+	     //////////
+	     if(!noGlitch) {
+		 if(Math.random() > 0.997) {
+		     goGlitch = true;
+		 }
+	     }
 
 	     if(goGlitch) {
 		 glitch();
@@ -252,14 +262,6 @@
 		 }
 	     }
 
-	     //////////
-	     // uncomment for glitch bitch
-	     //////////
-	     if(!noGlitch) {
-		 if(Math.random() > 0.997) {
-		     goGlitch = true;
-		 }
-	     }
 	 }
 
 	 function get(name){
@@ -267,7 +269,12 @@
 		 return decodeURIComponent(name[1]);
 	 }
 
-	 if(get('noglitch') == null) {
+	 if(get('noglitch') == "false") {
+	     console.log("noglitch == false");
+	     noGlitch = true;
+	 }
+	 else {
+	     console.log("noglitch == true");
 	     noGlitch = false;
 	 }
 
