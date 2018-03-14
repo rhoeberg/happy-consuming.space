@@ -1,0 +1,107 @@
+body
+{
+    background-color:#827D7D;
+    color:white;
+
+/*     margin:0; */
+/*     height: 100%; */
+/*     min-height: 100%; */
+/*     width: 100%; */
+}
+
+.logo
+{
+    height:400px;
+    /* width:800px; */
+    z-index:5;
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-text
+{
+    width: 50%;
+}
+
+.product-vid
+{
+    width:350px;
+    margin:30px;
+    vertical-align:middle;
+    /* height:auto; */
+
+}
+
+.welcome-box
+{
+    position:absolute;
+    /* overflow-x: hidden; */
+    /* white-space:nowrap; */
+    /* display:block; */
+}
+
+.welcome-text
+{
+    font-size:50px;
+    text-shadow: 2px 2px 5px red;
+}
+/* The heart of the matter */
+.testimonial-group {
+    position:relative;
+    /* top: 380px; */
+    bottom: 10%;
+    /* padding: 0px; */
+    /* margin: 0px; */
+}
+
+.testimonial-group > .row {
+    /* border: 3px solid #757070; */
+    /* border-radius: 10px; */
+    overflow-x: auto;
+    /* overflow-x: visible; */
+    white-space: nowrap;
+    display:block;
+}
+
+.testimonial-group > .row > .col-xs-4 {
+    display: inline-block;
+    float: none;
+}
+
+/* Decorations */
+/* .col-xs-4 { color: #fff; font-size: 48px; padding-bottom: 20px; padding-top: 18px; width: 200px; } */
+/* .col-xs-4:nth-child(3n+1) { background: #c69; } */
+/* .col-xs-4:nth-child(3n+2) { background: #9c6; } */
+/* .col-xs-4:nth-child(3n+3) { background: #69c; } */
+
+.container-fluid.full-width {
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
+
+.product
+{
+    background-color: #757070;
+    box-shadow: 10px 10px 5px black;
+    /* width:auto; */
+    /* height:auto; */
+}
+
+.lightbox-frame .featherlight-content
+{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.lightbox-frame .featherlight
+{
+    background: rgba(0, 0, 0, 0.2f);
+}
+
+.lightbox
+{
+    display:none;
+    color:#a3fdff;
+    /* background-color:black !important; */
+}
+

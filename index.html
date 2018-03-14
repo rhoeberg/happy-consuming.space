@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>vero</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../../../favicon.ico">
+	<!-- <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+	<link href="js/featherlight-1.7.7/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+	<link href="js/featherlight-1.7.7/release/featherlight.gallery.min.css" type="text/css" rel="stylesheet" />
+	<script src="js/jquery/jquery-2.1.1.min.js"></script>
+	<script src="js/featherlight-1.7.7/release/featherlight.min.js"></script>
+	
+	<!-- Custom styles for this template -->
+	<link href="css/app.css" rel="stylesheet">
+    </head>
+    <body>
+
+	<!-- <div class="container testimonial-group"> -->
+	<div class="row text-center">
+		<div class="welcome-box col">
+		    <marquee behavior="scroll" direction="left">
+			<p id="welcome1" class="welcome-text">We are welcoming You to the Shopping of future! Here You can find finest useful and joyful goods! Purchase and enjoy prosperity items of upcoming>>>>>> </p>
+		    </marquee>
+
+		    <p id="welcome2" class="welcome-text"> </p>
+		</div>
+	</div>
+	    <!-- </div> -->
+
+	<div class="container-fluid">
+	    <div class="row justify-content-center">
+		<div class="col-mx">
+		    <img id="logoid" class="logo" alt="" src="/assets/logo.gif"/>
+		</div>
+	    </div>
+	</div>
+
+	<!-- <br/> -->
+	<!-- <br/> -->
+
+	
+	<!-- <div class="container"> -->
+	    <!-- <div class="row" style="height:200px;"> -->
+	<div class="container testimonial-group">
+	    <div class="row text-center">
+
+		<div class="col-xs-4">
+		    <a data-featherlight="#box1" data-featherlight-variant="lightbox-frame" href="#">
+			<video class="product product-vid" src='/assets/milk.mp4' autoplay loop/>
+		    </a>
+		</div>
+		<div class="col-xs-4">
+		    <a data-featherlight="#box2" data-featherlight-variant="lightbox-frame" href="#">
+			<video class="product product-vid" src='/assets/Stones.mp4' autoplay loop/>
+		    </a>
+		</div>
+		<div class="col-xs-4">
+		    <a data-featherlight="#box3" data-featherlight-variant="lightbox-frame" href="#">
+			<video class="product product-vid" src='/assets/Joint-Pain.mp4' autoplay loop/>
+		    </a>
+		</div>
+		<div class="col-xs-4">
+		    <a data-featherlight="box4" data-featherlight-variant="lightbox-frame" href="#">
+			<img class="product product-vid" src="/assets/TITS.gif"/>
+		    </a>
+		</div>
+		<div class="col-xs-4">
+		    <a data-featherlight="box5" data-featherlight-variant="lightbox-frame" href="#">
+			<img class="product product-vid" src="/assets/LUBE.jpg"/>
+		    </a>
+		</div>
+		
+	    </div>
+	</div>
+
+
+	<div class="lightbox" id="box1">
+	    <div class="row">
+		<div class="col">
+		    <video src='/assets/milk.mp4' autoplay loop style='height:400px'></video>
+		</div>
+		<div class="col">
+		    Enjoy violent free diary from the ocean belly...Coming from the most intelligent aquatic mammals, 21 times better than human or cow milk..
+		    Would you feed your baby something bad? So arn't dolphins......
+		    Dont think-buy and use Dolphin Milk!!!
+		</div>
+	    </div>
+	</div>
+	<div id="box2" class="lightbox">
+	    <div class="row">
+		<div class="col">
+		    <video src='assets/Stones.mp4' autoplay loop style='height:400px'></video>
+		</div>
+		<div class="col">
+		    Packed set of Real Stones to reconnect with inanimate nature and recharge Your static energy!
+		</div>
+	    </div>
+	</div>
+	<div id="box3" class="lightbox">
+	    <div class="row">
+		<div class="col">
+		    <video src='assets/Joint-Pain.mp4' autoplay loop style='height:400px'></video>
+		</div>
+		<div class="col">
+		    There is no pain in future! Not at all!!
+		</div>
+	    </div>
+	</div>
+	<div class="lightbox" id="box4">
+	    <div class="row">
+		<div class="col">
+		    <img src='assets/TITS.gif' style='height:400px'/>
+		</div>
+		<div class="col">
+		    Remote LED silicone implants will bring and keep You on the top of pleasure! 11 mood sensitive light themes from "romantic sunset" to "euphoria flashes"...
+		</div>
+	    </div>
+	</div>
+	<div id="box5" class="lightbox">
+	    <div class="row">
+		<div class="col">
+		    <img src='assets/LUBE.jpg' style='height:400px'/>
+		</div>
+		<div class="col">
+		    Long lasting joy for both players 
+		</div>
+	    </div>
+	</div>
+
+	
+	<script>
+	 function getRandomColor() {
+	     var letters = '0123456789ABCDEF';
+	     var color = '#';
+	     for(var i = 0; i < 6; i++) {
+		 color += letters[Math.floor(Math.random() * 16)];
+	     }
+	     return color;
+	 }
+	 
+	 function morph(id) {
+	     // element 1
+	     var element = document.getElementById(id);
+	     if(Math.random() > 0.97) {
+		 var t = Math.random() * 500;
+		 element.style.top = t + "px";
+	     }
+	     else {
+		 element.style.top = "0px";
+	     }
+	     
+	     if(Math.random() > 0.9) {
+		 element.style.color = getRandomColor();
+		 var col = "2px 2px 5px " + getRandomColor();
+		 /* console.log(col);*/
+		 element.style.textShadow = col;
+
+	     }
+	     
+	     if(Math.random() > 0.9) {
+		 var s = Math.random() * 40;
+		 s += 10;
+		 element.style.fontSize = s + "px";
+	     }
+
+	     element.style.left = pos + "px";
+	 }
+	 
+	 function letterGlitch(id) {
+	     var text = document.getElementById(id);
+	     var l = Math.floor(Math.random() * text.textContent.length);
+	     var letters = "{}[]\\//()_+=&^%€#@!";
+	     var newLetter = Math.floor(Math.random() * letters.length);
+
+	     text.textContent = text.textContent.substring(0, l) + letters[newLetter] + text.textContent.substring(l+1, text.textContent.length);
+	 }
+
+	 var welcome1 = document.getElementById('welcome');
+	 var welcome2 = document.getElementById('welcome2');
+	 var pos = -3100;
+	 var pos = 1300;
+
+	 setInterval(onTimerTick, 16);
+
+	 var oldWelcome2 = "You are currently in We live in the Holocene Epoch, of the Quaternary Period, in the Cenozoic Era (of the Phanerozoic Eon) >click> for proceeding to the following";
+
+	 var timer = 0;
+	 var timerOn = false;
+
+
+	 /* welcome2.text.textContent;*/
+
+	 var goGlitch = false;
+	 function glitch()
+	 {
+	     morph("welcome1");
+
+	     document.getElementById("welcome2").textContent = oldWelcome2;
+	     document.getElementById("logoid").style.opacity = 0.2;
+
+	     /* document.getElementById("welcome2").textContent = oldWelcome2;*/
+
+	     morph("welcome2");
+	     if(Math.random() > 0.8) {
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 letterGlitch("welcome2");
+		 document.body.style.backgroundColor = getRandomColor();
+
+	     }
+	 }
+	 
+	 function onTimerTick() {
+
+	     if(goGlitch) {
+		 glitch();
+		 document.getElementById("welcome2").style.left = pos + "px";
+		 timerOn = true;
+	     }
+	     else {
+		 document.getElementById("welcome1").style.left = pos + "px";
+	     }
+
+	     pos -= 3;
+	     if(pos < -3100) {
+		 pos = 1300
+	     }
+
+	     if(timerOn) {
+		 timer += 0.01;
+		 if(timer > 1) {
+		     window.location = "error.html";
+		 }
+	     }
+
+	     //////////
+	     // uncomment for glitch bitch
+	     //////////
+	     if(Math.random() > 0.997) {
+		 goGlitch = true;
+	     }
+	 }
+	</script>
+
+    </body>
+
+ 
