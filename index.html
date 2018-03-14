@@ -106,6 +106,7 @@
 	    <div class="row">
 		<div class="col">
 		    <video src='assets/Joint-Pain.mp4' autoplay loop style='height:400px'></video>
+		    <!-- <video src='assets/Joint-Pain.mp4' autoplay loop/> -->
 		</div>
 		<div class="col">
 		    There is no pain in future! Not at all!!
@@ -227,6 +228,7 @@
 	     }
 	 }
 	 
+	 noGlitch = true;
 	 function onTimerTick() {
 
 	     if(goGlitch) {
@@ -253,10 +255,22 @@
 	     //////////
 	     // uncomment for glitch bitch
 	     //////////
-	     if(Math.random() > 0.997) {
-		 goGlitch = true;
+	     if(!noGlitch) {
+		 if(Math.random() > 0.997) {
+		     goGlitch = true;
+		 }
 	     }
 	 }
+
+	 function get(name){
+	     if(name=(new RegExp('[?&]'+encodeURIComponent(name)+'=([^&]*)')).exec(location.search))
+		 return decodeURIComponent(name[1]);
+	 }
+
+	 if(get('noglitch') == null) {
+	     noGlitch = false;
+	 }
+
 	</script>
 
     </body>
